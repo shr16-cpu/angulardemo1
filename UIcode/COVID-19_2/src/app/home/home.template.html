@@ -1,0 +1,67 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="wrap-whole-data">
+
+    <div class="admin-dashboard">
+        <div class="wrap-dashboard-header">
+            <h2>COVID-19 TELE-MEDICINE</h2>
+
+
+            <!-- <div class="tag-line">Making data quality monitoring and reporting easy from anywhere in the data movement process<br> Version X.X</div> -->
+        </div>
+        <div class="wrap-dashboard-line1">
+            <div *ngIf="this.username!='ShraddhaG'" class="dashboard-item" (click)="openPersonal()">
+
+                <div class="wrap-tile-admin">
+
+                    <div class="wrap-admin-icon">
+
+                        <img src="assets/personal-info.png" alt="Italian Trulli">
+
+
+                    </div>
+                    <div class="text-tile-def">Personal Information</div>
+
+                </div>
+            </div>
+            <div  *ngIf="this.username!='ShraddhaG'" class="dashboard-item" (click)="openLiveStatus()">
+
+                <div class="wrap-tile-admin">
+
+                    <div class="wrap-admin-icon">
+
+                        <img src="assets/live-status.png" alt="Italian Trulli">
+                    </div>
+                    <div class="text-tile-def">Live Status</div>
+                </div>
+
+            </div>
+            <div  *ngIf="this.username=='ShraddhaG'" class="dashboard-item" (click)="openLiveStatus()">
+
+                <div class="wrap-tile-admin">
+
+                    <div class="wrap-admin-icon">
+
+                        <img src="assets/personal-info.png" alt="Italian Trulli">
+                    </div>
+                    <div class="text-tile-def">Patients</div>
+                </div>
+
+            </div>
+       
+
+        <div  *ngIf="this.username!='ShraddhaG'" class="dashboard-item disabled" (click)="openIndividual()">
+            <div class="wrap-tile-admin">
+
+                <div class="wrap-admin-icon">
+                    <img src="assets/assessment.png" alt="Italian Trulli">
+                </div>
+                <div class="text-tile-def">Individual Assessment</div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</div>
