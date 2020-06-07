@@ -14,13 +14,13 @@ Through this interactive WebApp, the healthcare managers can identify the patien
 The intent of this application is to provide a virtual "conduit" system between the healthcare professionals/ analysts/ primary care physicians and the "home quarantined" COVID-19 patients. This Telemedicine application makes use of electronic communications and software to provide clinical services to COVID19 patients without having to make in-person visits. The system caters for remotely collating patient information/ data, including - subjective observations, symptoms, health assessments, diagnosis, medication management and patient demographics.</p>
 <h2>Demo Video</h2><p><a href="https://youtu.be/EIOKwF0lEmE" rel="nofollow"><img src="Images/thumbNail.png" style="max-width:100%;"> </a></p>
 <h2>Architecture<h2><p><p><img src="Additional-docs/architecture.png" style="max-width:100%;">
-  <ul>
+  <ol>
   <li>User navigates the website and register</li>  
   <li>Provide required information</li> 
   <li>Insructions will be given accordingly</li> 
   <li>Doctor will be assigned to each required user</li>
   <li>User will keep updating health status and doctor will keep consulting accordingly</li>
-    </ul>
+    </ol>
 <h2>Solution Roadmap</h2> <p><img src="Additional-docs/roadMap.png" style="max-width:100%;"></p>
 <h2>List of one or more IBM Cloud Services or IBM Systems used in the solution</h2><p>IBM cloud Kubernetes to deploy the angular application and spring boot code, though we have used Heroku deployment URLS in the angular UI as external IP of IBM Kubernetes is not exposed public for free trial accounts.</p>
 
