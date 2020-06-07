@@ -1,5 +1,14 @@
 <h1>Submission Name</h1> <p>COVID19-TeleMedicine-Web-App</p>
 <h2>Contents</h2>
+<ol>
+ <li><a href="#short-description">Short description</a></li>
+ <li><a href="#long-description">Long description</a></li>
+ <li><a href="#demo-video">Demo Video</a></li>
+ <li><a href="#architecture">Architecture</a></li>
+ <li><a href="#solution-roadmap">Solution Roadmap</a></li>
+ <li><a href="#list-of-one-or-more-ibm-cloud-services-or-ibm-systems-used-in-the-solution">List of one or more IBM Cloud Services or IBM Systems used in the solution</a></li>
+ <li><a href="#authors-">Authors</a></li>
+</ol>
 <h2>Short Description</h2> <p>The solution will limit the influx of COVID-19  “Low-Risk" patients into the hospitals and provide remote care by this interactive WebApp.
 The solution will also track “live status” of the patient.</p>
 
@@ -12,7 +21,7 @@ The solution will also track “live status” of the patient.</p>
 <p>
 Through this interactive WebApp, the healthcare managers can identify the patients who are in "incubation period" i.e. who are in duration from symptom onset to needing the hospitalization, instruct/guide them for home quarantine and provide both primary and specialty care via “Telemedicine”, thereby ensuring delivery of safe and quality care from remote, while stopping onward transmission and prioritizing the scarce healthcare resources.
 The intent of this application is to provide a virtual "conduit" system between the healthcare professionals/ analysts/ primary care physicians and the "home quarantined" COVID-19 patients. This Telemedicine application makes use of electronic communications and software to provide clinical services to COVID19 patients without having to make in-person visits. The system caters for remotely collating patient information/ data, including - subjective observations, symptoms, health assessments, diagnosis, medication management and patient demographics.</p>
-<h2>Demo Video</h2><p><a href="https://youtu.be/EIOKwF0lEmE" rel="nofollow"><img src="Images/thumbNail.png" style="max-width:100%;"> </a></p>
+<h2>Demo Video</h2><p>Go to video clicking image below</p><p><a href="https://youtu.be/EIOKwF0lEmE" rel="nofollow"><img src="Images/thumbNail.png" style="max-width:100%;"> </a></p>
 <h2>Architecture<h2><p><img src="Additional-docs/architecture.png" style="max-width:100%;"></p>
 <h2>Solution Roadmap</h2> <p><img src="Additional-docs/roadMap.png" style="max-width:100%;"></p>
 <h2>List of one or more IBM Cloud Services or IBM Systems used in the solution</h2><p>IBM cloud Kubernetes to deploy the angular application and spring boot code, though we have used Heroku deployment URLS in the angular UI as external IP of IBM Kubernetes is not exposed public for free trial accounts.</p>
