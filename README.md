@@ -13,7 +13,7 @@ The solution will also track “live status” of the patient.</p>
 Through this interactive WebApp, the healthcare managers can identify the patients who are in "incubation period" i.e. who are in duration from symptom onset to needing the hospitalization, instruct/guide them for home quarantine and provide both primary and specialty care via “Telemedicine”, thereby ensuring delivery of safe and quality care from remote, while stopping onward transmission and prioritizing the scarce healthcare resources.
 The intent of this application is to provide a virtual "conduit" system between the healthcare professionals/ analysts/ primary care physicians and the "home quarantined" COVID-19 patients. This Telemedicine application makes use of electronic communications and software to provide clinical services to COVID19 patients without having to make in-person visits. The system caters for remotely collating patient information/ data, including - subjective observations, symptoms, health assessments, diagnosis, medication management and patient demographics.</p>
 <h2>Demo Video</h2><p><a href="https://youtu.be/EIOKwF0lEmE" rel="nofollow"><img src="Images/thumbNail.png" style="max-width:100%;"> </a></p>
-<h2>Architecture<h2><p><p><img src="Additional-docs/architecture.png" style="max-width:100%;">
+<h2>Architecture<h2><p><img src="Additional-docs/architecture.png" style="max-width:100%;"></p>
   <ol>
   <li>User navigates the website and register</li>  
   <li>Provide required information</li> 
