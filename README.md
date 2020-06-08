@@ -46,7 +46,7 @@ The intent of this application is to provide a virtual "conduit" system between 
  <p>
   <img src="Additional-docs/roadMap.png" style="max-width:100%;">
  </p>
- <h2>Access Application</hr>
+ <h2>Access Application</h2>
  <p>
   Angular UI service is exposed on node 10.144.212.45 with port number 32750
  </p>
