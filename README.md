@@ -9,6 +9,7 @@
  <li><a href="#demo-video">Demo Video</a></li>
  <li><a href="#architecture">Architecture</a></li>
  <li><a href="#solution-roadmap">Solution Roadmap</a></li>
+ <li><a href="#access-application">Access Application</a></li>
  <li><a href="#list-of-one-or-more-ibm-cloud-services-or-ibm-systems-used-in-the-solution">List of one or more IBM Cloud Services or IBM Systems used in the solution</a></li>
  <li><a href="#authors-">Authors</a></li>
 </ol>
@@ -44,6 +45,10 @@ The intent of this application is to provide a virtual "conduit" system between 
 <h2>Solution Roadmap</h2> 
  <p>
   <img src="Additional-docs/roadMap.png" style="max-width:100%;">
+ </p>
+ <h2>Access Application</hr>
+ <p>
+  Angular UI service is exposed on node 10.144.212.45 with port number 32750
  </p>
 <h2>List of one or more IBM Cloud Services or IBM Systems used in the solution</h2>
  <p>
