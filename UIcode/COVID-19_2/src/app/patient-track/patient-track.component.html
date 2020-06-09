@@ -1,0 +1,183 @@
+<div class="wrap-whole-data">
+  <div class="wrap-tenant-nm-3">
+      <h2>Patient's Information</h2>
+      <span class="wrap-data">
+          <input type="submit" value="Download Report">
+      </span>
+  </div>
+  <div class="wrap-data-box">
+
+      <form>
+
+          <div class="wrap-tenant-nm">
+              <label>Name :</label>
+              <span class="wrap-data">Bhavna</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Gender :</label>
+
+              <span class="wrap-data3">Female</span>
+          </div>
+
+
+          <br />
+          <div class="wrap-tenant-nm">
+              <label>Age :</label>
+              <span class="wrap-data4">333</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Address :</label>
+              <span class="wrap-data1">Delhi</span>
+          </div>
+          <div class="wrap-tenant-nm">
+              <label>Contact Number :</label>
+              <span class="wrap-data">237676</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Email Address :</label>
+
+              <span class="wrap-data3">abc@gmail.com</span>
+          </div>
+
+          <br />
+          <div class="wrap-tenant-nm">
+              <label>Blood Group :</label>
+              <span class="wrap-data4">O-ve</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Country :</label>
+              <span class="wrap-data1">India</span>
+          </div>
+
+
+
+      </form>
+  </div>
+  <div class="wrap-tenant-nm-3">
+      <h2>Health history</h2>
+  </div>
+  <div class="wrap-data-box-1">
+
+      <form>
+
+          <div class="wrap-tenant-nm">
+              <label>Diabetes :</label>
+              <span class="wrap-data">Yes</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Hypertension :</label>
+
+              <span class="wrap-data3">yes</span>
+          </div>
+
+
+          <br />
+          <div class="wrap-tenant-nm">
+              <label>Lung disease :</label>
+              <span class="wrap-data4">yes</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Heart disease:</label>
+              <span class="wrap-data1">No</span>
+          </div>
+          <div class="wrap-tenant-nm">
+              <label>Kidney Disease :</label>
+              <span class="wrap-data">No</span>
+          </div>
+          <div class="wrap-tenant-nm1">
+              <label>Thyroid :</label>
+
+              <span class="wrap-data3">No</span>
+          </div>
+      </form>
+  </div>
+  <div class="wrap-health-information">
+      <div class="wrap-health-info">
+        <div class="wrap-date">
+          <h2>View Patient's Report </h2>
+          <div class="col-8">
+              <select id="status" name="status">
+                  <option value="normal">12/07/20</option>
+                <option value="moderate">13/07/20</option>
+                <option value="healthy">14/07/20</option>
+                <option value="critical">15/07/20</option>
+              </select>
+          </div>
+
+        </div>
+          
+          <div class="wrap-health-box">
+              <form>
+                  <div class="wrap-health">
+                      <label class="col-25" for="date">Date</label>
+                      <label class="col-75">20/05/20</label>
+                  </div>
+                  <div class="wrap-health">
+                      <label class="col-25" for="date">Temperature</label>
+                      <label class="col-75">103C</label>
+                  </div>
+                  <div class="wrap-health">
+                      <label class="col-25" for="date">General Symptoms</label>
+                      <span class="col-75">
+                          <div *ngFor="let health of health_history; let i = index;">
+
+                              
+                              <label class="checkbox-inline" for="health{{health.id}}">{{health.name}}</label>
+                              
+                              
+                          </div>
+                      </span>
+                  </div>
+                  <div class="wrap-health">
+                      <label class="col-25" for="date">Critical Symptoms</label>
+                      <span class="col-75">
+                          <div *ngFor="let health of health_history_critical; let i = index;">
+
+                              
+                              <label class="checkbox-inline" for="health{{health.id}}">{{health.name}}</label>
+                          </div>
+                      </span>
+                  </div>
+                  <div class="wrap-health">
+                    <div class="col-25">
+                      <label for="status">Status</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="status" name="status">
+                          <option value="normal">Normal</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="healthy">Healthy</option>
+                        <option value="critical">Critical</option>
+                      </select>
+                    </div>
+                  </div>
+              </form>
+              <span class="wrap-data1">
+                  <input type="submit" value="Submit" (click)="save()">
+              </span>
+          </div>
+      </div>
+          <div class="wrap-health-info-1">
+              <h2>Other Queries </h2>
+              <div class="wrap-health-box">
+                  <form>
+                          <div class="wrap-health">
+                          <textarea id="w3review" name="w3review" rows="6" cols="50" placeholder="Patient's other query"></textarea>
+                        </div>
+                         
+                        <div class="wrap-health">
+                             
+                              
+                              <textarea  placeholder="Doctor's comment here..." id="w3review" name="w3review" rows="6" cols="50" ></textarea>
+                            </div>
+                            <span class="wrap-data-2">
+                              <input type="submit" value="Submit" (click)="save()">
+                          </span>
+                   
+                  </form>
+              </div>
+
+
+          </div>
+</div>
+      

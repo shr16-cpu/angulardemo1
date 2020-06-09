@@ -1,0 +1,51 @@
+<div class="wrap-whole-data">
+  <form>
+  <div class="box-data">
+<h2>Please select COVID symptoms you are facing</h2> 
+  </div>
+<div class="wrap-data">
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div *ngFor="let country of countries; let i = index;">
+  <input type="checkbox" name="country{{country.id}}" [(ngModel)]="countries[i].checked">
+  <label for="country{{country.id}}">{{country.name}}</label>
+</div>
+<!-- <button type="button" (click)="sendCheckedCountries()" *ngIf="countries"></button> -->
+</div>
+<div class="box-data">
+<h2>Please select critical COVID symptoms you are facing</h2> 
+</div>
+<div class="wrap-data-2">
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div *ngFor="let critical_case of critical; let i = index;">
+  <input type="checkbox" name="critical_case{{critical_case.id}}" [(ngModel)]="critical[i].checked">
+  <label for="critical_case{{critical_case.id}}">{{critical_case.name}}</label>
+</div>
+<!-- <button type="button" (click)="sendCheckedCountries()" *ngIf="countries"></button> -->
+</div>
+<div class="box-data">
+<h2>Health History</h2> 
+</div>
+<div class="wrap-data">
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div *ngFor="let health of health_history; let i = index;">
+  <input type="checkbox" name="health{{health.id}}" [(ngModel)]="health_history[i].checked">
+  <label for="health{{health.id}}">{{health.name}}</label>
+</div>
+<!-- <button type="button" (click)="sendCheckedCountries()" *ngIf="countries"></button> -->
+</div>
+<div class="box-data">
+<h2>Additional Info</h2> 
+</div>
+<div class="wrap-data-1">
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div *ngFor="let add of additional_info; let i = index;">
+  <input type="checkbox" name="add{{add.id}}" [(ngModel)]="additional_info[i].checked">
+  <label for="add{{add.id}}">{{add.name}}</label>
+</div>
+<!-- <button type="button" (click)="sendCheckedCountries()" *ngIf="countries"></button> -->
+</div>
+<div class="row">
+  <input type="submit" value="Submit">
+</div>
+</form>
+</div>
