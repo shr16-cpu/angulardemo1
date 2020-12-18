@@ -1,2 +1,3 @@
 welcome shr-cpu
 hello
+hi
