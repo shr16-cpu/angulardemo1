@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div class="wrap-whole-data">
+<div class="container">
+  <form >
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Patient Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name." [(ngModel)]="patientName">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="fname" name="firstname" placeholder="password..." [(ngModel)]="patientPassword">
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Gender</label>
+      </div>
+      <div class="wrap-radio">
+        <div class="db-elem-radio1">
+            <input type="radio" name="gender" [(ngModel)]='selectedGender' id="radio_male"
+                value="male"  />
+            <span class="lbl-radio" for="radio_none">Male</span>
+        </div>
+        <div class=db-elem-radio2>
+            <input type="radio" name="gender" [(ngModel)]='selectedGender' id="radio_female"
+                value="female" />
+            <span class="lbl-radio" for="radio_yes">Female</span>
+        </div>
+    </div>
+    </div>
+  
+  
+
+ 
+
+  <div class="row">
+    <div class="col-25">
+      <label for="contact">Contact Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="contact" name="contact" placeholder="Your contact number.." [(ngModel)]="patientContact">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Your email address.." [(ngModel)]="patientEmail">
+    </div>
+  </div>
+
+  
+    
+    <div class="row">
+      <input type="submit" value="Submit" (click)="SaveUser()">
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
+

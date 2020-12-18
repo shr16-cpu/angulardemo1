@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,OnChanges } from '@angular/core';
+
+
+import {Router} from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'covid-test-project';
+  
+
+   
+  constructor( private router:Router) {}
+
+    
 }
+
+    

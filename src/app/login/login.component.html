@@ -1,0 +1,35 @@
+<div class="wrap-signin">
+    <div class="form-layout dq-login">
+
+        <h1>Sign In</h1>
+        <!-- formGroup is a reactive form directive that takes an existing FormGroup instance and associates it with an HTML element. -->
+         <form>
+                    <div>
+                        <label for="fname">User Name</label>
+                      
+                   
+                        <input type="text" id="fname" class="form-control" name="firstname" placeholder="Your name." [(ngModel)]="patientName">
+                      </div>
+                    
+                    <div>
+                          <label for="password">Password</label>
+                        
+                          <input type="password" id="fname" name="firstname" class="form-control" placeholder="password..." [(ngModel)]="patientPassword">
+                        </div>
+                   
+            <div class="wrap-buttons">
+                <div class="wrap-login-submit">
+
+                    <input type="submit" value="Sign In" (click)="navigateToHome()">
+                </div>
+                <div class="wrap-forgot-submit">
+                    <div class="wrap-login-submit">
+                        <input type="submit" value="Register Here" (click)="navigateToRegister()">
+                    </div>
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

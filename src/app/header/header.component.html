@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div  *ngIf="getURL()" class="topnav">
+    <div  *ngIf="getURL1()" >
+  
+ 
+  <a routerLink="/home" routerLinkActive="Active">Home</a>
+  <a  routerLink="/personalInfo" routerLinkActive="Active" *ngIf="getUser()">Personal Information</a>
+  <a  routerLink="/patientDetails" routerLinkActive="Active"  *ngIf="getUser()">Live Status</a>
+  <a  routerLink="/individualAssessment" routerLinkActive="Active"  >Individual Assessment</a>
+  <a  routerLink="/individualInstructions" routerLinkActive="Active" *ngIf="getUser()" >Individual Instruction</a>
+  <a  routerLink="/patients" routerLinkActive="Active"  *ngIf="getUserDoctor()">Patients</a>
+  <!-- <a  routerLink="/patientTrack" routerLinkActive="Active">Patient Details</a> -->
+  <a  routerLink="/frequently-asked" routerLinkActive="Active">FAQ</a>
+  <a class="signout-placing" href="#signout">Sign Out</a>
+
+</div>
+</div>
+
+
+</body>
+</html>
+

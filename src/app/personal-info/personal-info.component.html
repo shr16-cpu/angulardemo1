@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<!-- <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p> --> 
+<div class="wrap-whole-data">
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" [(ngModel)]="patientNm" id="fname" name="firstname" placeholder="Your name.">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Patient-Type</label>
+      </div>
+      <div class="wrap-radio">
+        <div class="db-elem-radio1">
+            <input type="radio" name="gender" [(ngModel)]='selectedType' id="radio_covid"
+                value="covid"  />
+            <span class="lbl-radio" for="radio_none">Covid</span>
+        </div>
+        <div class=db-elem-radio2>
+            <input type="radio" name="gender" [(ngModel)]='selectedType' id="radio_non-covid"
+                value="non-covid" />
+            <span class="lbl-radio" for="radio_yes">Non-Covid</span>
+        </div>
+    </div>
+    </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Age</label>
+    </div>
+    <div class="col-75">
+      <input type="number" [(ngModel)]="patientAge" id="age" name="age" placeholder="Your age..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text"  [(ngModel)]="patientAddress" id="address" name="address" placeholder="Your address..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="contact">Contact Number</label>
+    </div>
+    <div class="col-75">
+      <input type="number"  [(ngModel)]="contact" id="contact" name="contact" placeholder="Your contact number..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" [(ngModel)]="mail" id="email" name="email" placeholder="Your email address..">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="blood_grp">Blood Group</label>
+    </div>
+    <div class="col-75">
+      <input type="text" [(ngModel)]="bloodgrp" id="blood_grp" name="blood_grp" placeholder="Your blood group..">
+    </div>
+  </div>
+
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country" [(ngModel)]="country">
+            <option value="australia">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <input type="submit" value="Submit" (click)="save()">
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
+
